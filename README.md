@@ -11,6 +11,18 @@ Summary: Console colouring for python
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-termstyle-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-termstyle-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-termstyle-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-termstyle-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-termstyle-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-termstyle-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-termstyle/badges/version.svg)](https://anaconda.org/conda-forge/python-termstyle)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-termstyle/badges/downloads.svg)](https://anaconda.org/conda-forge/python-termstyle)
+
 Installing python-termstyle
 ===========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `python-termstyle` available on yo
 ```
 conda search python-termstyle --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-termstyle-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-termstyle-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-termstyle-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-termstyle-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-termstyle-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-termstyle-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-termstyle/badges/version.svg)](https://anaconda.org/conda-forge/python-termstyle)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-termstyle/badges/downloads.svg)](https://anaconda.org/conda-forge/python-termstyle)
 
 
 Updating python-termstyle-feedstock
