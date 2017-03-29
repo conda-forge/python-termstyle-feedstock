@@ -1,9 +1,10 @@
-{%set name = "python-termstyle" %}
-{%set shortname = "termstyle" %}
-{%set version = "0.1.11" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "ef74b83698ea014112040cf32b1a093c1ab3d91c4dd18ecc03ec178fd99c9f9f" %}
+{% set name = "python-termstyle" %}
+{% set shortname = "termstyle" %}
+{% set version = "0.1.11" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "ef74b83698ea014112040cf32b1a093c1ab3d91c4dd18ecc03ec178fd99c9f9f" %}
+{% set build_num = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +16,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
