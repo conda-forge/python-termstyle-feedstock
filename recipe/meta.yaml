@@ -2,7 +2,6 @@
 {% set shortname = "termstyle" %}
 {% set version = "0.1.11" %}
 {% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
 {% set hash_val = "ef74b83698ea014112040cf32b1a093c1ab3d91c4dd18ecc03ec178fd99c9f9f" %}
 {% set build_num = 1 %}
 
@@ -12,24 +11,26 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ shortname[0] }}/{{ shortname }}/{{ shortname }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.org/packages/source/{{ shortname[0] }}/{{ shortname }}/{{ shortname }}-{{ version }}.{{ compress_type }}
+  sha256: {{ hash_val }}
 
 build:
   noarch: python
   number: {{ build_num }}
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - termstyle
 
